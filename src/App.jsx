@@ -1,47 +1,28 @@
-import React from "react";
-import Sidebar from "react-sidebar";
-import Navbar from "./components/SideNavBar";
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Home } from './components/Home';
+import { MD5Info } from './components/MD5Info';
+import { NoMatch } from './components/NoMatch';
+import { Layout } from './components/Layout';
+import { NavigationBar } from './components/NavigationBar';
+import { Jumbotron } from './components/Jumbotron';
 
-const mql = window.matchMedia(`(min-width: 800px)`);
-
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sidebarDocked: mql.matches,
-      sidebarOpen: false
-    };
-
-    this.mediaQueryChanged = this.mediaQueryChanged.bind(this);
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-  }
-
-  componentWillMount() {
-    mql.addListener(this.mediaQueryChanged);
-  }
-
-  componentWillUnmount() {
-    mql.removeListener(this.mediaQueryChanged);
-  }
-
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-  }
-
-  mediaQueryChanged() {
-    this.setState({ sidebarDocked: mql.matches, sidebarOpen: false });
-  }
-
+class App extends Component {
   render() {
     return (
-      <Sidebar
-        sidebar={Navbar}
-        open={this.state.sidebarOpen}
-        docked={this.state.sidebarDocked}
-        onSetOpen={this.onSetSidebarOpen}
-      >
-        <b>Main content</b>
-      </Sidebar>
+      <React.Fragment>
+        <NavigationBar />
+        <Jumbotron />
+        <Layout>
+          <Router>
+            <Switch>
+              <Route exact path ="/" component={Home} />
+              <Route path ="/md5" component={MD5Info} />
+              <Route component={NoMatch} />
+            </Switch>
+          </Router>
+        </Layout>
+      </React.Fragment>
     );
   }
 }
