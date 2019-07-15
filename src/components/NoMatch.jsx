@@ -2,6 +2,6 @@ import React from 'react';
 
 export const NoMatch = () => (
     <div>
-        <h2>Error 404</h2>
+        <h1>Error 404</h1>
     </div>
 )

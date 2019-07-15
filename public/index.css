@@ -1,5 +1,16 @@
+:root {
+    --header-font: 'Lora', serif;
+    --header-color: #5F2D39;
+    --paragraph-font: 'Source Sans Pro', sans-serif;
+    --paragraph-color: #434343;
+}
+
 .padding-left-zero {
     padding-left: 0 !important;
+}
+
+.padding-right-zero {
+    padding-right: 0 !important;
 }
 
 .full-height-vh {
@@ -17,10 +28,20 @@
 body {
     margin: 0;
     padding: 0;
-  
-    /** background image */
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
     background-image: url("./assets/BG.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+  }
+
+  body h1 {
+    font-family: var(--header-font);
+    color: var(--header-color);
+  }
+
+  body h2 {
+    font-family: var(--header-font);
+    color: var(--header-color);
   }
