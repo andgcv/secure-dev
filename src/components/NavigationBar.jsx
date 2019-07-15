@@ -10,10 +10,10 @@ const Styles = styled.div`
 }
 
 .navbar-nav .nav-link {
-    color: #bbb;
+    color: #434343;
 
     &:hover {
-        color: white;
+        color: #5F2D39;
     }
 }
 
@@ -22,22 +22,28 @@ const Styles = styled.div`
 }
 
 .navbar-brand img{
-    width: 60%;
+    width: 40%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 16px;
+    margin: 20px auto 16px auto;
 }
 `;
 
 export const NavigationBar = () => (
-    <Styles className="col-md-2 float-left padding-left-zero">
-        <Navbar expand="lg">
+    <Styles className="col-md-3 float-left padding-left-zero full-height-percent">
+        <Navbar expand="lg" className="full-height-percent">
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="flex-column">
-                    <Navbar.Brand href="/"><img src="/assets/Logo.png" /></Navbar.Brand>
-                    <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                <Nav className="flex-column full-height-vh scroll">
+                    <Navbar.Brand href="/"><img src="/assets/BrandLogo.png" alt="Brand logo"/></Navbar.Brand>
+                    <h2>Cybersecurity</h2>
+                    <Nav.Item><Nav.Link href="/cybersecurity-intro">Introduction</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/cybersecurity-and-cybercrimes">Cybersecurity and Cybercrimes</Nav.Link></Nav.Item>
+                    <h2>Cryptography</h2>
+                    <Nav.Item><Nav.Link href="/cryptography-intro">Introduction</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/data">What is data?</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/transfering-data">Transfering data securely</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/encryption-and-decryption">Encrytion and Decryption</Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/common-algorithms">Commonly used algorithms</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/3des">3DES</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/aes">AES</Nav.Link></Nav.Item>
                     <Nav.Item><Nav.Link href="/rsa">RSA</Nav.Link></Nav.Item>

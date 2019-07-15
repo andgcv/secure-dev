@@ -1,9 +1,8 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import Style from 'styled-components';
 
 export const Layout = (props) => (
-    <Container className="col-md-10 float-left">
+    <Container className="col-md-9 float-left full-height-percent scroll">
         {props.children}
     </Container>
 )
