@@ -3,6 +3,7 @@
     --header-color: #5F2D39;
     --paragraph-font: 'Source Sans Pro', sans-serif;
     --paragraph-color: #434343;
+    --page-height: 100%;
 }
 
 .padding-left-zero {
@@ -18,7 +19,7 @@
 }
 
 .full-height-percent {
-    height: 100%;
+    height: var(--page-height);
 }
 
 .scroll {

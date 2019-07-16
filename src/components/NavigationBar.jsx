@@ -37,10 +37,26 @@ const Styles = styled.div`
         display: block;
         margin: 20px auto 16px auto;
     }
+
+    @media screen and (max-width: 992px) {
+        .navbar {
+            position: fixed;
+            z-index: 5;
+        }
+
+        .navbar-toggler {
+            position: fixed;
+            top: 50%;
+            padding: 30px 0 30px 0;
+        }
+
+        --page-height: initial;
+
+    }
 `;
 
 export const NavigationBar = () => (
-    <Styles className="col-md-3 float-left padding-left-zero padding-right-zero full-height-percent">
+    <Styles className="col-md-3 float-left padding-left-zero padding-right-zero full-height-percent">   
         <Navbar expand="lg" className="full-height-percent">
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
@@ -52,9 +68,9 @@ export const NavigationBar = () => (
                         <Nav.Item><Nav.Link href="/cybersecurity-and-cybercrimes">Cybersecurity and Cybercrimes</Nav.Link></Nav.Item>
                         <h2>Cryptography</h2>
                         <Nav.Item><Nav.Link href="/cryptography-intro">Introduction</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/data">What is data?</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/transfering-data">Transfering data securely</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/encryption-and-decryption">Encrytion and Decryption</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/what-is-data">What is data?</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/transfer-data-securely">Transfering data securely</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/encryption-and-decryption">Encryption and Decryption</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/common-algorithms">Commonly used algorithms</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/3des">3DES</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/aes">AES</Nav.Link></Nav.Item>
