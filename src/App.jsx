@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Home } from './components/Home';
 import { CybersecurityIntro } from './components/CybersecurityIntro';
-import { CybersecurityCybercrimes } from './components/CybersecurityCybercrimes';
+import { ImportantCybercrimes } from './components/ImportantCybercrimes';
 import { CryptographyIntro } from './components/CryptographyIntro';
 import { WhatIsData } from './components/WhatIsData';
 import { TransferData } from './components/TransferData';
@@ -27,7 +27,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/cybersecurity-intro" component={CybersecurityIntro} />
-              <Route path="/cybersecurity-and-cybercrimes" component={CybersecurityCybercrimes} />
+              <Route path="/important-cybercrimes" component={ImportantCybercrimes} />
               <Route path="/cryptography-intro" component={CryptographyIntro} />
               <Route path="/what-is-data" component={WhatIsData} />
               <Route path="/transfer-data-securely" component={TransferData} />

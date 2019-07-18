@@ -65,7 +65,7 @@ export const NavigationBar = () => (
                     <div className="scroll">
                         <h2>Cybersecurity</h2>
                         <Nav.Item><Nav.Link href="/cybersecurity-intro">Introduction</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/cybersecurity-and-cybercrimes">Cybersecurity and Cybercrimes</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/important-cybercrimes">Important Cybercrimes</Nav.Link></Nav.Item>
                         <h2>Cryptography</h2>
                         <Nav.Item><Nav.Link href="/cryptography-intro">Introduction</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/what-is-data">What is data?</Nav.Link></Nav.Item>
