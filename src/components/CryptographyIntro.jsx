@@ -77,6 +77,7 @@ export const CryptographyIntro = () => (
             </div>
 
             <p>Here we can see the fundamental idea of encrypting communications through secret keys / secret algorithms. Cryptography is divided into 3 main branches: symmetric algorithms, asymmetric algorithms and cryptographic protocols.<br/>These will be explained in further detail on the respective sections of the website.</p>
+            <p>Due to it's intrinsic relation to cryptography, it is also crucial to mention that the science of cryptoanalysis is also as important, if not more important than, cryptography itself. The reason is, with noone trying to break our crypto methods, we will never know whether they are really secure or not.</p>
         </div>
     </Styles>
 )

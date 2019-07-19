@@ -69,7 +69,18 @@ export const WhatIsData = () => (
             <img className="img-with-source" src ="./assets/WhatIsDataEye.jpg" alt="Eye receiving the data surrounding it."/>
             <p className="quote source">Eye capturing and storing data surrounding it.</p>
 
+            <h2>Computer Data?</h2>
+
             <p>Just the same way our eyes process and send the images to our brain, in an organized manner, for storage, so does the computer, in the form of organized, binary, information. And that's exactly how we categorize "data" when we're refering to the ample fields of the IT world.</p>
+
+            <div className="quote">
+                <p>In general, data is any set of characters that is gathered and translated for some purpose, usually analysis. It can be any character, including text and numbers, pictures, sound, or video. If data is not put into context, it doesn't do anything to a human or computer.
+                    <br/>Within a computer's storage, data is a collection of numbers represented as bytes that are in turn composed of bits (binary digits) that can have the value one or zero. Data is processed by the CPU, which uses logical operations to produce new data (output) from source data (input).</p>
+                <p className="source">Computer Hope. Data. June 30, 2019.</p>
+            </div>
+
+            <img className="img-with-source" src="./assets/WhatIsDataStorage.jpg" alt="Storage compartment, that stores data."/>
+            <p className="quote source">There are many ways to store data in a computer.</p>
         </div>
     </Styles>
 )

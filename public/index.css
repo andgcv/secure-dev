@@ -3,6 +3,8 @@
     --header-color: #5F2D39;
     --paragraph-font: 'Source Sans Pro', sans-serif;
     --paragraph-color: #434343;
+    --link-hover-color: #53a5ed;
+    --cream-color: #f3d5c1;
     --page-height: 100%;
 }
 
@@ -26,6 +28,17 @@
     overflow-y: scroll;
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--header-color);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: none;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -37,12 +50,12 @@ body {
     background-size: cover;
   }
 
-  body h1 {
-    font-family: var(--header-font);
-    color: var(--header-color);
-  }
+body h1 {
+  font-family: var(--header-font);
+  color: var(--header-color);
+}
 
-  body h2 {
-    font-family: var(--header-font);
-    color: var(--header-color);
-  }
+body h2 {
+  font-family: var(--header-font);
+  color: var(--header-color);
+}

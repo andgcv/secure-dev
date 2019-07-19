@@ -12,15 +12,20 @@ const Styles = styled.div`
     .navbar h2 {
         font-size: 16pt;
         font-weight: bold;
-        padding-top: 20px;
+        padding-top: 40px;
         padding-bottom: 10px;
     }
 
     .navbar-nav .nav-link {
         color: #434343;
+        padding-left: 15px;
+        transition: background-color .2s, color .2s;
 
+        &:focus,
         &:hover {
-            color: #5F2D39;
+            background-color: var(--header-color);
+            color: var(--cream-color);
+            font-weight: bold !important;
         }
     }
 
@@ -45,9 +50,18 @@ const Styles = styled.div`
         }
 
         .navbar-toggler {
-            position: fixed;
-            top: 50%;
-            padding: 30px 0 30px 0;
+            border: none;
+            width: 6vh !important;
+            height: 5vh !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .navbar-toggler-icon {
+            display: block;
+            width: 3vh !important;
+            height: 3vh !important;
+            margin: 0 auto;
         }
 
         --page-height: initial;
@@ -69,14 +83,11 @@ export const NavigationBar = () => (
                         <h2>Cryptography</h2>
                         <Nav.Item><Nav.Link href="/cryptography-intro">Introduction</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/what-is-data">What is data?</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/transfer-data-securely">Transfering data securely</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/encryption-and-decryption">Encryption and Decryption</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/common-algorithms">Commonly used algorithms</Nav.Link></Nav.Item>
+                        <h2>Commonly used algorithms</h2>
                         <Nav.Item><Nav.Link href="/3des">3DES</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/aes">AES</Nav.Link></Nav.Item>
                         <Nav.Item><Nav.Link href="/rsa">RSA</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/blowfish">Blowfish</Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/twofish">Twofish</Nav.Link></Nav.Item>
                     </div>
                 </Nav>
             </Navbar.Collapse>
