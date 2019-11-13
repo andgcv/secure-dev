@@ -28,6 +28,11 @@
     overflow-y: scroll;
 }
 
+.side-note {
+    font-size: 10px;
+    padding: 0 10%;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
